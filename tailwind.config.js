@@ -15,7 +15,6 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -283,7 +282,7 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: ["0.75rem", { lineHeight: "1rem" }],
+      xs: ["0.65rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],
       base: ["1rem", { lineHeight: "1.5rem" }],
       lg: ["1.125rem", { lineHeight: "1.75rem" }],
@@ -804,6 +803,7 @@ module.exports = {
       "9/12": "75%",
       "10/12": "83.333333%",
       "11/12": "91.666667%",
+      "12/12": "97.666667%",
       full: "100%",
       screen: "100vw",
       min: "min-content",
