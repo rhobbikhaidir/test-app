@@ -1,4 +1,5 @@
-import "./styles/tailwind.css";
+// import "./styles/tailwind.css";
+import './styles/index.css'
 import CoinCard from "./components/CoinCard";
 function App() {
   return (

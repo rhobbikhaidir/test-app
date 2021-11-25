@@ -5,97 +5,84 @@ import arrowDown from "../assets/arrowDown.png";
 
 const CoinCard = () => {
   return (
-    <div className="md:w-1/2 ml-4 mt-20 rounded-lg bg-white h-auto shadow-2xl pt-3 pr-8">
-      {/* atas */}
-      <div className="text-center m-8 flex mt-16 flex-col md:flex-row">
-        <div className="flex flex-row -ml-4 w-36 h-14 rounded-2xl shadow-xl md:ml-0">
-          <img
-            src={USDT}
-            alt=""
-            className="m-2 flex-row "
-            style={{ width: 40, height: 40 }}
-          />
-          <select
-            name="price"
-            id="price"
-            className="bg-transparent text-black font-bold flex-row focus:outline-none"
-          >
-            <option value="volvo">USDT</option>
-            <option value="saab">USD</option>
-            <option value="opel">RP</option>
-            <option value="audi">EURO</option>
-          </select>
+    <div className="p-4 rounded-xl bg-white dark:bg-main-dark shadow-xl">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
+        <div className="flex flex-row space-x-2">
+          <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34">
+            <img className="w-8 h-8" src={USDT} alt="icon-usdt" />
+            <span className="text-base font-semibold text-main-text-dark">
+              USDT
+            </span>
+            <div className="w-5 h-5">
+              <img
+                className="w-full h-full"
+                src={arrowDown}
+                alt="icon-chevronDown"
+              />
+            </div>
+          </div>
         </div>
-        {/* input 1 */}
-        <div className="flex-row flex  bg-gray-200 justify-end relative h-14 mt-6 ml-64  rounded-2xl md:w-3/4 md:ml-20 md:mt-1  ">
-          <p className="absolute -top-4 -left-64 md:top-0 md:left-0 md:-mt-5 md:-ml-8 text-xs">
-            Pay
-          </p>
-          <p className="absolute -top-4 right-0 md:top-0 md:right-0 md:-mt-5 md:mr-2 text-xs">
-            Balance:0.0
-          </p>
-          <input
-            className="flex-row bg-gray-200 rounded-2xl focus:outline-none pl-6 "
-            value="0.00"
-            type="number"
+        <form>
+          <div className="flex justify-between pb-2 px-2">
+            <span className="text-xs text-main-text-light dark:text-main-text-dark-2">
+              Pay
+            </span>
+            <span className="text-xs text-main-text-light dark:text-main-text-dark-2">
+              Balance : 0.00
+            </span>
+          </div>
+          <div className="bg-main-light dark:bg-main-comp-dark border border-litedex p-4 flex sm:w-96 rounded-xl items-center space-x-2 flex-row">
+            <input
+              className="text-base text-gray-400 flex-grow outline-none bg-transparent placeholder-main-text-light-2 dark:placeholder-main-text-dark"
+              type="number"
+              placeholder="0.00"
+            />
+            <button className="text-litedex font-bold focus:outline-none">
+              Max
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="flex justify-start items-end py-4 ml-14 sm:-mb-8">
+        <div className="w-6 h-6">
+          <img
+            className="w-full h-full animate-bounce"
+            src={arrowDown}
+            alt="icon-arrowDown"
           />
-          <p className="flex-row text-green-500 uppercase text-base font-bold text-center absolute m-3 md:mt-4  md:mr-4 ">
-            {" "}
-            max
-          </p>
         </div>
       </div>
-      {/* bawah */}
-      <img src={arrowDown} alt="" className="md:ml-24 ml-20" />
-
-      {/* <div className="text-center m-8 flex md:mt-16 flex-col md:flex-row"> */}
-      <div className="w-auto bg-transparent text-center  ml-8 rounded  m-8 flex md:mt-4 flex-col md:flex-row">
-        <div className="flex flex-row  w-36 h-14 rounded-2xl shadow-xl -ml-4 md:ml-0 ">
-          <img
-            src={Litedex}
-            alt=""
-            className="m-2 flex-row "
-            style={{ width: 40, height: 40 }}
-          />
-
-          <select
-            name="price"
-            id="price"
-            className="bg-transparent text-black font-bold flex-row focus:outline-none"
-          >
-            <option value="volvo">LDX</option>
-            <option value="saab">USD</option>
-            <option value="opel">RP</option>
-            <option value="audi">EURO</option>
-          </select>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end space-y-4">
+        <div className="flex flex-row space-x-2">
+          <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34">
+            <div className="w-8 h-8">
+              <img className="w-8 h-8" src={Litedex} alt="icon-usdt" />
+            </div>
+            <span className="text-base font-semibold text-main-text-dark">
+              LDX
+            </span>
+          </div>
         </div>
-        {/* input 2 */}
-        <div className="flex-row flex pl-8  justify-end relative h-14 ml-56 mt-6 rounded-2xl md:w-1/2 md:ml-24 md:mt-1">
-          <p className="absolute -top-4 -left-60 pl-3 md:top-0 md:left-0 md:-mt-5 md:-ml-8 text-xs">
-            Get (estimate)
-          </p>
-          <p className="absolute -top-4 right-0 md:top-0 md:right-0 md:-mt-5 md:mr-2 text-xs">
-            Balance:0.0
-          </p>
-          <input
-            className="flex-row bg-gray-200 rounded-2xl focus:outline-none pl-6  md:pr-12 "
-            value="0.00"
-            type="number"
-          />
-          {/* <p className="flex-row text-green-500 uppercase text-base font-bold text-center mt-4  mr-4 ">
-              {" "}
-              max
-            </p> */}
-        </div>
+        <form>
+          <div className="flex justify-between pb-2 px-2">
+            <span className="text-xs text-main-text-light dark:text-main-text-dark-2">
+              Get (Estimate)
+            </span>
+            <span className="text-xs text-main-text-light dark:text-main-text-dark-2">
+              Balance : 0.00
+            </span>
+          </div>
+          <div className="bg-main-light dark:bg-main-comp-dark border border-litedex p-4 flex sm:w-96 rounded-xl items-center space-x-2 flex-row">
+            <input
+              className="text-base text-gray-400 flex-grow outline-none bg-transparent placeholder-main-text-light-2 dark:placeholder-main-text-dark"
+              type="number"
+              placeholder="0.00"
+            />
+          </div>
+        </form>
       </div>
-      <button
-        className="w-11/12 h-14 rounded-2xl m-8 text-white btn-connect text-center shadow-lg"
-        style={{
-          background:
-            "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
-        }}
-      >
-        Connet to Wallet
+      <button className="w-full bg-green-400 py-3 mt-8 bg-gradient-to-b from-litedex to-litedex-dark text-center text-white rounded-xl">
+        Connect to Wallet
       </button>
     </div>
   );
