@@ -1,7 +1,7 @@
 import React from "react";
 import USDT from "../assets/usdt.png";
 import Litedex from "../assets/litedex.png";
-import arrowDown from "../assets/arrowDown.png";
+import arrowDown from "../assets/arrowdown.svg";
 import arrowDown2 from "../assets/arrowSvg.svg";
 
 const CoinCard = () => {
