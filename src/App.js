@@ -2,19 +2,19 @@ import "./styles/tailwind.css";
 import CoinCard from "./components/CoinCard";
 function App() {
   return (
-    <div className="max-w-sm sm:max-w-7xl px-4 sm:flex block px-4 sm:px-0">
-      <div className="max-w-xs mb-8 sm:max-w-xl mt-20 flex-col sm:ml-3 sm:flex-row  ">
+    <div className="max-w-sm sm:max-w-7xl px-4 sm:py-16 sm:px-9 sm:flex block px-4 sm:px-0">
+      <div className="max-w-xs mb-8 sm:max-w-xl flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
-        <div className="flex">
-          <div className="rounded-3xl w-1/4 md:h-20 mr-2 md:mr-2 shadow-lg ">
-            <h1 className="text-5xl pr-3 flex ml-2 md:mt-6 text-center font-normal text-black">
+        <div className="flex justify-between ">
+          <div className="rounded-3xl w-1/4 md:h-20 mr-2  shadow-lg ">
+            <h1 className="text-5xl flex ml-2 md:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs md:text-sm flex-row  flex-1 ml-1 mt-6 md:mr-4 text-gray-700">
                 Day
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl w-1/4 md:h-20 mr-2 md:mr-2 shadow-lg ">
+          <div className="rounded-3xl w-1/4 md:h-20 mr-2  shadow-lg ">
             <h1 className="text-5xl flex ml-2 md:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs md:text-sm flex-row  flex-1 ml-1 mt-6 md:mr-4 text-gray-700">
@@ -22,7 +22,7 @@ function App() {
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl w-1/4 md:h-20 mr-2 md:mr-2 shadow-lg ">
+          <div className="rounded-3xl w-1/4 md:h-20 mr-2  shadow-lg ">
             <h1 className="text-5xl flex ml-2 md:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs md:text-sm flex-row  flex-1  mt-6 md:mr-4 text-gray-700">
@@ -30,7 +30,7 @@ function App() {
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl w-1/4 md:h-20 mr-0 md:mr-8 shadow-lg ">
+          <div className="rounded-3xl w-1/4 md:h-20 mr-0 shadow-lg ">
             <h1 className="text-5xl flex ml-2 md:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs md:text-sm flex-row  flex-1 mt-6 md:mr-4 text-gray-700">
@@ -41,8 +41,8 @@ function App() {
         </div>
 
         {/* Content Price */}
-        <div className="flex mt-9 md:mt-8">
-          <div className="shadow-lg mr-1.5 h-16  w-1/2 sm:mr-2 pr-5 rounded-3xl relative flex-row md:h-20 ">
+        <div className="flex mt-9 md:mt-8 justify-between">
+          <div className="shadow-lg mr-1.5 h-16  flex-1 sm:mr-2 pr-5 rounded-3xl relative flex-row sm:h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 absolute top-1 left-4">
               Current Price
             </p>
@@ -50,7 +50,7 @@ function App() {
               LDX = 0.1 BUSD
             </h2>
           </div>
-          <div className="shadow-lg w-1/2 md:mr-4  rounded-3xl relative flex-row md:h-20 ">
+          <div className="shadow-lg flex-1  rounded-3xl relative flex-row md:h-20 ">
             <p className="text-xs md:text-sm font-normal text-gray-700 absolute top-1 left-4">
               Availble LDX
             </p>
@@ -59,8 +59,8 @@ function App() {
             </h2>
           </div>
         </div>
-        <div className="flex mt-9 md:mt-8">
-          <div className="shadow-lg mr-1.5 w-1/2 md:w-1/2 md:mr-2 pr-5 rounded-3xl relative flex-row h-20 ">
+        <div className="flex mt-9 md:mt-8 justify-between">
+          <div className="shadow-lg mr-1.5 flex-1   pr-5 rounded-3xl relative flex-row h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 absolute top-1 left-4">
               LDX Token Sold
             </p>
@@ -68,7 +68,7 @@ function App() {
               00,000,000,000 LDX
             </h2>
           </div>
-          <div className="shadow-lg w-1/2 md:w-1/2 md:mr-4  rounded-3xl relative flex-row md:h-20 ">
+          <div className="shadow-lg flex-1 rounded-3xl relative flex-row md:h-20 ">
             <p className="text-xs md:text-sm font-normal text-gray-700 absolute top-1 left-4">
               LDX Token Sold ($)
             </p>
@@ -78,7 +78,7 @@ function App() {
           </div>
         </div>
         {/* ICO Progress */}
-        <div className="w-12/12 mr-4 mt-2 h-32 p-4  shadow-lg rounded-3xl">
+        <div className="w-full  mt-2 h-32 p-4  shadow-lg rounded-3xl">
           <p className=" text-xs md:text-sm font-normal text-center ">
             ICO Progress
           </p>
