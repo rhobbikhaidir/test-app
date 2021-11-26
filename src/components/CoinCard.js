@@ -5,7 +5,7 @@ import arrowDown from "../assets/arrowDown.png";
 
 const CoinCard = () => {
   return (
-    <div className="p-4 rounded-xl h-full text-center content-center sm:mt-14 sm:ml-11 bg-white dark:bg-main-dark shadow-xl flex-col sm:flex-row">
+    <div className="p-4 rounded-xl h-full flex-1 sm:flex-row flex-col text-center content-center sm:mt-14 bg-white dark:bg-main-dark shadow-xl flex-col sm:flex-row">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
           <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34">
