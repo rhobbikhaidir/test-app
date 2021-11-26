@@ -1,7 +1,4 @@
 import "./styles/tailwind.css";
-import USDT from "./assets/usdt.png";
-import Litedex from "./assets/litedex.png";
-import arrowDown from "./assets/arrowDown.png";
 import CoinCard from "./components/CoinCard";
 function App() {
   return (
