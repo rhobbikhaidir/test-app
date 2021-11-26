@@ -94,7 +94,13 @@ function App() {
           </p>
           {/* diagram */}
           <div className="w-12/12 mt-2 rounded-3xl h-10 bg-gray-300">
-            <div className="w-2/5 rounded-3xl h-10 bg-green-400">
+            <div
+              className="w-2/5 rounded-3xl h-10 "
+              style={{
+                background:
+                  "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
+              }}
+            >
               <p className="text-sm text-white text-center pt-2">30.98%</p>
             </div>
           </div>

@@ -9,7 +9,7 @@ const CoinCard = () => {
     <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-14 bg-white dark:bg-main-dark shadow-xl">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
-          <button className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus">
+          <button className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus:outline-none">
             <img className="w-8 h-8" src={USDT} alt="icon-usdt" />
             <span className="text-base font-semibold text-main-text-dark">
               USDT
@@ -82,7 +82,13 @@ const CoinCard = () => {
           </div>
         </form>
       </div>
-      <button className="w-full bg-green-400 py-3 mt-8 bg-gradient-to-b from-litedex to-litedex-dark text-center text-white rounded-xl">
+      <button
+        className="w-full  py-3 mt-8 bg-gradient-to-b from-litedex to-litedex-dark text-center text-white rounded-xl"
+        style={{
+          background:
+            "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
+        }}
+      >
         Connect to Wallet
       </button>
     </div>
