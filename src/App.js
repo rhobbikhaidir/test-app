@@ -5,11 +5,11 @@ function App() {
     <div className="max-w-sm mr-0 block sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-8">
       <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
-        <div className="flex justify-between space-x-4 sm:space-x-6 w-full ">
+        <div className="flex justify-between space-x-0.5 sm:space-x-6 w-full ">
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-4 sm:mt-6 text-center font-normal text-black">
               01{" "}
-              <span className="text-xs sm:text-sm flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
+              <span className="text-xs mr-4 sm:text-sm flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Day
               </span>
             </h1>
@@ -17,7 +17,7 @@ function App() {
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               01{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
+              <span className="text-xs mr-4 sm:text-sm flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Hours
               </span>
             </h1>
@@ -25,7 +25,7 @@ function App() {
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1  mt-6 sm:mr-10 text-gray-700">
+              <span className="text-xs mr-4 sm:text-sm flex-row  flex-1  mt-6 sm:mr-10 text-gray-700">
                 Minute
               </span>
             </h1>
@@ -33,7 +33,7 @@ function App() {
           <div className="rounded-3xl flex-1 sm:h-20 shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1 mt-6 sm:mr-10 text-gray-700">
+              <span className="text-xs mr-4 sm:text-sm flex-row  flex-1 mt-6 sm:mr-10 text-gray-700">
                 Second
               </span>
             </h1>
