@@ -2,22 +2,22 @@ import "./styles/tailwind.css";
 import CoinCard from "./components/CoinCard";
 function App() {
   return (
-    <div className="max-w-sm block sm:flex sm:justify-between sm:max-w-7xl px-4 sm:py-16 sm:px-9 sm:flex block px-4 sm:space-x-6">
-      <div className="mb-8 sm:max-w-xl flex-1 flex-col sm:ml-3 sm:flex-row  ">
+    <div className="max-w-sm mr-0 block sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-8">
+      <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
-        <div className="flex justify-between space-x-1 w-full ">
+        <div className="flex justify-between space-x-6 w-full ">
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
-            <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
+            <h1 className=" text-3xl sm:text-5xl flex ml-4 sm:mt-6 text-center font-normal text-black">
               01{" "}
-              <span className="text-xs sm:text-sm flex-row flex-1 ml-1 mt-6 sm:mr-4 text-gray-700">
+              <span className="text-xs sm:text-sm flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Day
               </span>
             </h1>
           </div>
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
-              00{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1 ml-1 mt-6 sm:mr-4 text-gray-700">
+              01{" "}
+              <span className="text-xs sm:text-sm flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Hours
               </span>
             </h1>
@@ -25,7 +25,7 @@ function App() {
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1  mt-6 sm:mr-4 text-gray-700">
+              <span className="text-xs sm:text-sm flex-row  flex-1  mt-6 sm:mr-10 text-gray-700">
                 Minute
               </span>
             </h1>
@@ -33,7 +33,7 @@ function App() {
           <div className="rounded-3xl flex-1 sm:h-20 shadow-lg ">
             <h1 className=" text-3xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
-              <span className="text-xs sm:text-sm flex-row  flex-1 mt-6 md:mr-4 text-gray-700">
+              <span className="text-xs sm:text-sm flex-row  flex-1 mt-6 sm:mr-10 text-gray-700">
                 Second
               </span>
             </h1>
@@ -41,7 +41,7 @@ function App() {
         </div>
 
         {/* Content Price */}
-        <div className="flex mt-9 md:mt-8 justify-between w-full">
+        <div className="flex mt-9 md:mt-8 justify-between w-full space-x-2">
           <div className="shadow-lg h-16  flex-1 sm:mr-2 rounded-3xl relative flex-row sm:h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 absolute top-1 left-4">
               Current Price
@@ -59,7 +59,7 @@ function App() {
             </h2>
           </div>
         </div>
-        <div className="flex mt-9 md:mt-8 justify-between">
+        <div className="flex mt-9 md:mt-8 justify-between space-x-2">
           <div className="shadow-lg flex-1   rounded-3xl relative flex-row h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 absolute top-1 left-4">
               LDX Token Sold
