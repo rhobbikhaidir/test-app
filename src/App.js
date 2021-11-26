@@ -17,7 +17,7 @@ function App() {
         {/* content realtime */}
         <div className="flex justify-between space-x-0.5 sm:space-x-6 max-w-xs sm:w-full ">
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
-            <h1 className=" text-2xl sm:text-5xl flex ml-4 sm:mt-6 text-center font-normal text-black">
+            <h1 className="text-2xl mt-2 sm:text-5xl flex ml-4 sm:mt-6 text-center font-normal text-black">
               01{" "}
               <span className="text-xs text-center mb-2 sm:text-sm flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Day
@@ -25,7 +25,7 @@ function App() {
             </h1>
           </div>
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
-            <h1 className=" text-2xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
+            <h1 className="text-2xl mt-2 sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               01{" "}
               <span className="text-xs text-center mb-2 sm:text-sm flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700">
                 Hours
@@ -33,7 +33,7 @@ function App() {
             </h1>
           </div>
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
-            <h1 className=" text-2xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
+            <h1 className="text-2xl mt-2 sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs text-center mb-2 sm:text-sm flex-row  flex-1  mt-6 sm:mr-10 text-gray-700">
                 Minute
@@ -41,7 +41,7 @@ function App() {
             </h1>
           </div>
           <div className="rounded-3xl flex-1 sm:h-20 shadow-lg ">
-            <h1 className=" text-2xl sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
+            <h1 className="text-2xl mt-2 sm:text-5xl flex ml-2 sm:mt-6 text-center font-normal text-black">
               00{" "}
               <span className="text-xs text-center mb-2 sm:text-sm flex-row  flex-1 mt-6 sm:mr-10 text-gray-700">
                 Second
