@@ -5,8 +5,8 @@ import arrowDown from "./assets/arrowDown.png";
 import CoinCard from "./components/CoinCard";
 function App() {
   return (
-    <div className="max-w-7xl px-4 sm:flex block">
-      <div className="max-w-xs mb-8 sm:max-w-xl mt-20 ml-3 flex-col md:ml-3 sm:flex-row  ">
+    <div className="max-w-sm sm:max-w-7xl px-4 sm:flex block px-4 sm:px-0">
+      <div className="max-w-xs mb-8 sm:max-w-xl mt-20 flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
         <div className="flex">
           <div className="rounded-3xl w-1/4 md:h-20 mr-2 md:mr-2 shadow-lg ">
@@ -87,13 +87,7 @@ function App() {
           </p>
           {/* diagram */}
           <div className="w-12/12 mt-2 rounded-3xl h-10 bg-gray-300">
-            <div
-              className="w-2/5 rounded-3xl h-10"
-              style={{
-                background:
-                  "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
-              }}
-            >
+            <div className="w-2/5 rounded-3xl h-10 bg-green-400">
               <p className="text-sm text-white text-center pt-2">30.98%</p>
             </div>
           </div>
