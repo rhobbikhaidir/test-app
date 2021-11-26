@@ -2,13 +2,14 @@ import React from "react";
 import USDT from "../assets/usdt.png";
 import Litedex from "../assets/litedex.png";
 import arrowDown from "../assets/arrowDown.png";
+import arrowDown2 from "../assets/arrowSvg.svg";
 
 const CoinCard = () => {
   return (
     <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-14 bg-white dark:bg-main-dark shadow-xl">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
-          <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34">
+          <button className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus">
             <img className="w-8 h-8" src={USDT} alt="icon-usdt" />
             <span className="text-base font-semibold text-main-text-dark">
               USDT
@@ -16,11 +17,11 @@ const CoinCard = () => {
             <div className="w-5 h-5">
               <img
                 className="w-full h-full"
-                src={arrowDown}
+                src={arrowDown2}
                 alt="icon-chevronDown"
               />
             </div>
-          </div>
+          </button>
         </div>
         <form>
           <div className="flex justify-between pb-2 px-2">
@@ -44,7 +45,7 @@ const CoinCard = () => {
         </form>
       </div>
       <div className="flex justify-start items-end py-4 ml-14 sm:-mb-8">
-        <div className="w-6 h-6">
+        <div className="w-5 h-5">
           <img
             className="w-full h-full animate-bounce"
             src={arrowDown}
@@ -54,7 +55,7 @@ const CoinCard = () => {
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
-          <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34">
+          <div className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-32">
             <div className="w-8 h-8">
               <img className="w-8 h-8" src={Litedex} alt="icon-usdt" />
             </div>
