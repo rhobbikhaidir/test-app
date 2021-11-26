@@ -15,7 +15,7 @@ function App() {
     <div className="max-w-sm mr-0 block sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-8">
       <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
-        <div className="flex justify-between space-x-0.5 sm:space-x-6 w-full ">
+        <div className="flex justify-between space-x-0.5 sm:space-x-6 max-w-xs sm:w-full ">
           <div className="rounded-3xl  sm:h-20 flex-1 flex-row  shadow-lg ">
             <h1 className=" text-2xl sm:text-5xl flex ml-4 sm:mt-6 text-center font-normal text-black">
               01{" "}

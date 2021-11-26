@@ -11474,7 +11474,7 @@ video {
 
 .text-xs {
   font-size: 0.65rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
 }
 
 .text-sm {
@@ -13900,7 +13900,7 @@ video {
 }
 
 .max-w-xs {
-  max-width: 20rem;
+  max-width: 21.875rem;
 }
 
 .max-w-sm {
@@ -40739,7 +40739,7 @@ video {
 
   .sm\:text-xs {
     font-size: 0.65rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 
   .sm\:text-sm {
@@ -43165,7 +43165,7 @@ video {
   }
 
   .sm\:max-w-xs {
-    max-width: 20rem;
+    max-width: 21.875rem;
   }
 
   .sm\:max-w-sm {
@@ -69925,7 +69925,7 @@ video {
 
   .md\:text-xs {
     font-size: 0.65rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 
   .md\:text-sm {
@@ -72351,7 +72351,7 @@ video {
   }
 
   .md\:max-w-xs {
-    max-width: 20rem;
+    max-width: 21.875rem;
   }
 
   .md\:max-w-sm {
@@ -99111,7 +99111,7 @@ video {
 
   .lg\:text-xs {
     font-size: 0.65rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 
   .lg\:text-sm {
@@ -101537,7 +101537,7 @@ video {
   }
 
   .lg\:max-w-xs {
-    max-width: 20rem;
+    max-width: 21.875rem;
   }
 
   .lg\:max-w-sm {
@@ -128297,7 +128297,7 @@ video {
 
   .xl\:text-xs {
     font-size: 0.65rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 
   .xl\:text-sm {
@@ -130723,7 +130723,7 @@ video {
   }
 
   .xl\:max-w-xs {
-    max-width: 20rem;
+    max-width: 21.875rem;
   }
 
   .xl\:max-w-sm {
@@ -157483,7 +157483,7 @@ video {
 
   .\32xl\:text-xs {
     font-size: 0.65rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 
   .\32xl\:text-sm {
@@ -159909,7 +159909,7 @@ video {
   }
 
   .\32xl\:max-w-xs {
-    max-width: 20rem;
+    max-width: 21.875rem;
   }
 
   .\32xl\:max-w-sm {
