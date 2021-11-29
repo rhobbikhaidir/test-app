@@ -99,8 +99,8 @@ const CoinCard = () => {
           <div className="bg-main-light dark:bg-main-comp-dark border border-litedex p-4 flex sm:w-96 rounded-xl items-center space-x-2 flex-row">
             <input
               className="text-base text-gray-400 flex-grow outline-none bg-transparent placeholder-main-text-light-2 dark:placeholder-main-text-dark dark:border-gray-500"
-              type="number"
-              placeholder="0.00"
+              type="text"
+              placeholder="any Refferal"
             />
             <button className="text-litedex font-bold focus:outline-none text-green-400">
               Paste
