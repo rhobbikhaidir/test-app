@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect } from "react";
 import CoinCard from "./components/CoinCard";
 import "./styles/tailwind.css";
 function App() {
