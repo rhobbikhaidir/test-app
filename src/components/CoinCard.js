@@ -84,7 +84,7 @@ const CoinCard = () => {
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
-          <div className="bg-white dark:bg-main-comp-dark p-3 flex items-center rounded-xl justify-start space-x-2 w-32">
+          <div className="bg-white dark:bg-main-comp-dark p-3 hidden sm:flex items-center rounded-xl justify-start space-x-2 w-32">
             <span className="text-sm font-semibold text-main-text-dark">
               Referral Code
             </span>
