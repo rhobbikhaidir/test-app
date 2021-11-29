@@ -100,7 +100,7 @@ const CoinCard = () => {
             <input
               className="text-base text-gray-400 flex-grow outline-none bg-transparent placeholder-main-text-light-2 dark:placeholder-main-text-dark dark:border-gray-500"
               type="text"
-              placeholder="any Refferal"
+              placeholder="paste here"
             />
             <button className="text-litedex font-bold focus:outline-none text-green-400">
               Paste
