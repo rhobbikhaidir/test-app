@@ -6,7 +6,7 @@ import arrowDown2 from "../assets/arrowSvg.svg";
 
 const CoinCard = () => {
   return (
-    <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-14 bg-white dark:bg-main-dark shadow-xl">
+    <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-0 bg-white dark:bg-main-dark shadow-xl">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
         <div className="flex flex-row space-x-2">
           <button className="bg-white dark:bg-main-comp-dark shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus:outline-none">
@@ -79,6 +79,32 @@ const CoinCard = () => {
               type="number"
               placeholder="0.00"
             />
+          </div>
+        </form>
+      </div>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end space-y-4">
+        <div className="flex flex-row space-x-2">
+          <div className="bg-white dark:bg-main-comp-dark p-3 flex items-center rounded-xl justify-start space-x-2 w-32">
+            <span className="text-sm font-semibold text-main-text-dark">
+              Referral Code
+            </span>
+          </div>
+        </div>
+        <form>
+          <div className="flex justify-start pb-2 px-2">
+            <span className="text-xs text-main-text-light dark:text-main-text-dark-2">
+              Referral Code (optional)
+            </span>
+          </div>
+          <div className="bg-main-light dark:bg-main-comp-dark border border-litedex p-4 flex sm:w-96 rounded-xl items-center space-x-2 flex-row">
+            <input
+              className="text-base text-gray-400 flex-grow outline-none bg-transparent placeholder-main-text-light-2 dark:placeholder-main-text-dark"
+              type="number"
+              placeholder="0.00"
+            />
+            <button className="text-litedex font-bold focus:outline-none text-green-400">
+              Paste
+            </button>
           </div>
         </form>
       </div>
