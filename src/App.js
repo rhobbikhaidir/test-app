@@ -89,7 +89,7 @@ function App() {
           </div>
 
           {/* Content Price */}
-          <div className=" shadow-2xl px-10 py-4 rounded-2xl space-y-4">
+          <div className=" shadow-2xl px-4 py-4 rounded-2xl space-y-4">
             <p className="text-sm text-black">Referral :</p>
             <div className="bg-gray-300 px-4 py-4 flex flex-col rounded-xl space-y-6">
               <div className="text-center">
