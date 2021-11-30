@@ -95,7 +95,7 @@ function App() {
               <div className="text-center">
                 <p className="text-sm font-bold mb-2">Copy ID</p>
                 <div className="bg-white rounded-2xl flex flex-row py-2">
-                  <button className="w-full relative">
+                  <button className="w-full relative text-sm focus:outline-none">
                     {"0xD316"}
                     <img
                       src={copyIcon}
@@ -109,7 +109,7 @@ function App() {
               <div className="text-center">
                 <p className="text-sm font-bold mb-2">Copy Link</p>
                 <div className="bg-white rounded-2xl flex flex-row py-2">
-                  <button className="w-full relative">
+                  <button className="w-full relative text-sm focus:outline-none">
                     https://token.litedex.io/0xD315
                     <img
                       src={copyIcon}
