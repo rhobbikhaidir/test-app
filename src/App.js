@@ -1,145 +1,170 @@
-import React, { useEffect } from "react";
-import CoinCard from "./components/CoinCard";
+import React, { useEffect, useState } from "react";
+import BNB from "./assets/BNB.png";
+import coinLitedex from "./assets/coin-litedex.jpg";
+import TopContent from "./components/Organisms/topContent";
 import "./styles/tailwind.css";
+import copyIcon from "./assets/copy-btn.svg";
 function App() {
-  const handleChangeTheme = (value) => {
-    localStorage.setItem("theme", value);
+  const [theme, setTheme] = useState(true);
+  const handleChangeTheme = () => {
+    setTheme(!theme);
+    localStorage.setItem("theme", theme);
     const html = document.querySelector("html");
 
-    if (value === "dark") {
-      html.classList.remove("light");
-    } else {
+    if (theme) {
       html.classList.remove("dark");
+      html.classList.add("light");
+    } else {
+      html.classList.remove("light");
+      html.classList.add("dark");
     }
-    html.classList.add(localStorage.getItem("theme"));
   };
 
   useEffect(() => {
-    document.querySelector("html").classList.add(localStorage.getItem("theme"));
+    if (theme) {
+      document.querySelector("html").classList.remove("dark");
+      document.querySelector("html").classList.add("light");
+    } else {
+      document.querySelector("html").classList.remove("light");
+      document.querySelector("html").classList.add("dark");
+    }
   });
   return (
-    <div className="dark:bg-gray-700 ">
+    <div className="dark:bg-gray-700 h-full">
       <div className="flex items-center ">
         <div className="flex flex-row items-end shadow-lg rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
           <p className="text-lg text-gray-600 flex-row">Switcher</p>
           <div className="flex-row px-2">
             <button
-              onClick={() => handleChangeTheme("light")}
-              className="bg-gray-400 rounded-full focus:outline-none w-4 h-4 mr-2 flex-row"
-            ></button>
-            <button
-              onClick={() => handleChangeTheme("dark")}
-              className="bg-black rounded-full focus:outline-none w-4 h-4 flex-row"
+              onClick={handleChangeTheme}
+              className={`${
+                theme ? "bg-black" : "bg-white "
+              }  rounded-full focus:outline-none w-4 h-4 mr-2 flex-row`}
             ></button>
           </div>
         </div>
       </div>
+      <TopContent />
 
-      <div className="max-w-sm mr-0 block sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-4">
-        <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
+      {/* content Bot */}
+      <div className="max-w-sm mr-0 flex-col-reverse sm:flex-row-reverse  sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-4">
+        <div className="mb-8 flex-1  flex flex-wrap content-center  sm:ml-3 sm:mt-16">
           {/* content realtime */}
-          <div className="flex justify-between space-x-0.5 sm:space-x-5 max-w-xs sm:w-full ">
-            <div className="rounded-3xl  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black pb-4 ">
-              <h1 className="text-2xl sm:mb-4 mt-2 sm:text-5xl sm:flex inline-block ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
-                01{" "}
-                <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700 dark:text-gray-300 ">
-                  Day
-                </span>
-              </h1>
+
+          <div className="px-4 py-4 rounded-2xl space-y-6 ">
+            <p className="text-4xl flex-col text-center font-light  text-black">
+              What is <span className="font-bold">Referral</span>
+            </p>
+            <p className="text-sm sm:text-2xl">
+              A referral code is a collection of digits consisting of letters
+              and numbers that usually presents a unique code. The code is
+              usually written with numbers, letters, or a combination of letters
+              and numbers. Usually, this code is used to attract more new users
+              from an app or platform.
+            </p>
+          </div>
+        </div>
+
+        {/* Left Content */}
+        <div className="mb-8 flex-1 sm:ml-3  flex flex-col space-y-6  ">
+          <p className="text-4xl mb-6 text-center font-light text-black">
+            Account Portfolio
+          </p>
+          {/* content realtime */}
+
+          <div className=" shadow-xl px-4 py-4 rounded-2xl ">
+            <p className="text-sm text-black">Total Claimed :</p>
+            <div className="flex-row mt-2 flex items-center">
+              <img src={coinLitedex} alt="" className="w-7 h-7 rounded-full" />
+              <p className="text-2xl font-bold mx-2"> 150 LDX +</p>
+              <img src={BNB} alt="" className="w-7 h-7 rounded-full" />
+              <p className="text-2xl font-bold ml-2"> 0.5 USDT </p>
+              <p className="text-sm font-sm ml-2"> = 100 USDT</p>
             </div>
-            <div className="rounded-3xl  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black  px-1 ">
-              <h1 className="text-2xl mt-2  sm:text-5xl inline-block sm:flex flex-1  ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
-                01{" "}
-                <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700 dark:text-gray-300">
-                  Hours
-                </span>
-              </h1>
-            </div>
-            <div className="rounded-3xl  sm:h-20 flex-1 flex-row  items-center shadow-lg dark:bg-black  ">
-              <h1 className="text-2xl mt-2 sm:text-5xl inline-block sm:flex  ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
-                00{" "}
-                <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row   mt-6 sm:mr-10 text-gray-700 dark:text-gray-300">
-                  Minute
-                </span>
-              </h1>
-            </div>
-            <div className="rounded-3xl flex-1 sm:h-20 shadow-lg items-center dark:bg-black   ">
-              <h1 className="text-2xl mt-2 sm:text-5xl inline-block sm:flex ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
-                00{" "}
-                <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row  items-center flex-1 mt-6 sm:mr-10 text-gray-700 dark:text-gray-300">
-                  Second
-                </span>
-              </h1>
+            <p className="text-sm text-black mt-2 ">Balance LDX</p>
+            <div className="flex-row mt-2 flex items-center">
+              <img src={coinLitedex} alt="" className="w-7 h-7 rounded-full" />
+              <p className="text-2xl font-bold mx-2"> 1500 LDX </p>
             </div>
           </div>
 
           {/* Content Price */}
-          <div className="flex mt-4 sm:mt-4 justify-between w-full space-x-2">
-            <div className="shadow-lg h-16  flex-1 sm:mr-2 rounded-3xl dark:bg-black   relative flex-row sm:h-20 ">
-              <p className="text-xs md:text-sm font-normal  text-gray-700 dark:text-gray-300 absolute top-1 left-4">
-                Current Price
-              </p>
-              <h2 className="text-sm mt-8 dark:text-gray-300 ml-4 md:text-lg font-bold text-center md:mt-10 ">
-                LDX = 0.1 BUSD
-              </h2>
+          <div className=" shadow-2xl px-10 py-4 rounded-2xl space-y-4">
+            <p className="text-sm text-black">Referral :</p>
+            <div className="bg-gray-300 px-4 py-4 flex flex-col rounded-xl space-y-6">
+              <div className="text-center">
+                <p className="text-sm font-bold mb-2">Copy ID</p>
+                <div className="bg-white rounded-2xl flex flex-row py-2">
+                  <button className="w-full relative">
+                    {"0xD316"}
+                    <img
+                      src={copyIcon}
+                      alt=""
+                      className="w-7 h-7 absolute right-4  -top-0.5"
+                    />
+                  </button>
+                  {/* <img src={copyIcon} alt="" className="w-7 h-7" /> */}
+                </div>
+              </div>
+              <div className="text-center">
+                <p className="text-sm font-bold mb-2">Copy Link</p>
+                <div className="bg-white rounded-2xl flex flex-row py-2">
+                  <button className="w-full relative">
+                    https://token.litedex.io/0xD315
+                    <img
+                      src={copyIcon}
+                      alt=""
+                      className="w-7 h-7 absolute right-4  -top-0.5"
+                    />
+                  </button>
+                  {/* <img src={copyIcon} alt="" className="w-7 h-7" /> */}
+                </div>
+              </div>
             </div>
-            <div className="shadow-lg flex-1  rounded-3xl dark:bg-black  relative flex-row md:h-20 ">
-              <p className="text-xs md:text-sm font-normal text-gray-700 dark:text-gray-300 absolute top-1 left-4">
-                Availble LDX
-              </p>
-              <h2 className="text-sm mt-8 dark:text-gray-300 md:text-lg font-bold text-center md:mt-10">
-                6,253,800.679 LDX
-              </h2>
+
+            <div className="flex flex-row ">
+              <div className="flex-1">
+                <p className="text-sm text-black">Total Invite :</p>
+                <p className="text-lg font-bold ">10 User</p>
+              </div>
+              <div className="flex-1 space-y-2 ">
+                <p className="text-sm text-black">Total Invite :</p>
+                <div className="flex flex-row space-x-2">
+                  {" "}
+                  <img
+                    src={coinLitedex}
+                    alt="icon coinLdx"
+                    className="w-8 h-8 rounded-full"
+                  />{" "}
+                  <p className="text-lg font-bold ">150 LDX</p>
+                </div>
+                <div className="flex flex-row space-x-2">
+                  {" "}
+                  <img
+                    src={BNB}
+                    alt="icon coinLdx"
+                    className="w-8 h-8 rounded-full"
+                  />{" "}
+                  <p className="text-lg font-bold ">0.5 USDT</p>
+                </div>{" "}
+              </div>
             </div>
-          </div>
-          <div className="flex mt-4 sm:mt-4 justify-between space-x-2">
-            <div className="shadow-lg flex-1   rounded-3xl dark:bg-black   relative flex-row h-20 ">
-              <p className="text-xs md:text-sm font-normal  text-gray-700 dark:text-gray-300 absolute top-1 left-4">
-                LDX Token Sold
-              </p>
-              <h2 className="text-sm w-full dark:text-gray-300 ml-3 md:text-lg font-bold text-center mt-10 ">
-                00,000,000,000 LDX
-              </h2>
-            </div>
-            <div className="shadow-lg flex-1 rounded-3xl dark:bg-black   relative flex-row md:h-20 ">
-              <p className="text-xs md:text-sm font-normal text-gray-700 dark:text-gray-300 absolute top-1 left-4">
-                LDX Token Sold ($)
-              </p>
-              <h2 className="text-sm w-full dark:text-gray-300 md:text-lg font-bold text-center mt-10">
-                $0,000,000.000 USD
-              </h2>
-            </div>
-          </div>
-          {/* ICO Progress */}
-          <div className="w-full  mt-2 h-32 p-4  shadow-lg rounded-3xl dark:bg-black sm:mt-5  ">
-            <p className=" text-xs md:text-sm font-normal text-center dark:text-gray-300 ">
-              ICO Progress
-            </p>
-            {/* diagram */}
-            <div className="w-12/12 mt-2 rounded-3xl h-10 bg-gray-300">
-              <div
-                className="w-2/5 rounded-3xl h-10 "
+
+            {/* button claimed */}
+            <div className="text-center space-y-2 pt-4">
+              <p className="text-sm  font-bold">Claim your referral</p>
+              <button
+                className="rounded-2xl text-white px-10 py-2"
                 style={{
                   background:
                     "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
                 }}
               >
-                <p className="text-sm text-white text-center pt-2">30.98%</p>
-              </div>
-            </div>
-
-            <div className="relative mt-3 w-12/12">
-              <p className=" text-xs md:text-sm text-black dark:text-gray-300  absolute bot-0">
-                Avaliable : 8885854.41 LDX
-              </p>
-              <p className="text-xs md:text-sm text-black dark:text-gray-300  absolute bot-0 right-0">
-                Total : 10000000.00 LDX
-              </p>
+                Claim
+              </button>
             </div>
           </div>
         </div>
-
-        <CoinCard />
       </div>
     </div>
   );
