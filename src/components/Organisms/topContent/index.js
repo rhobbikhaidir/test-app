@@ -10,7 +10,7 @@ const TopContent = () => {
       <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
         {/* content realtime */}
         <div className="flex justify-between space-x-0.5 sm:space-x-5 max-w-xs">
-          <div className="rounded-3xl  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black pb-4 ">
+          <div className="rounded-3xl bg-white  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black pb-4 ">
             <h1 className="text-2xl sm:mb-4 mt-2 sm:text-5xl sm:flex inline-block ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
               01{" "}
               <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row flex-1 ml-1 mt-6 sm:mr-12 text-gray-700 dark:text-gray-300 ">
@@ -18,7 +18,7 @@ const TopContent = () => {
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black  px-1 ">
+          <div className="rounded-3xl bg-white  sm:h-20 flex-1 flex-row items-center shadow-lg dark:bg-black  px-1 ">
             <h1 className="text-2xl mt-2  sm:text-5xl inline-block sm:flex flex-1  ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
               01{" "}
               <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row  flex-1 ml-1 mt-6 sm:mr-12 text-gray-700 dark:text-gray-300">
@@ -26,7 +26,7 @@ const TopContent = () => {
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl  sm:h-20 flex-1 flex-row  items-center shadow-lg dark:bg-black  ">
+          <div className="rounded-3xl bg-white  sm:h-20 flex-1 flex-row  items-center shadow-lg dark:bg-black  ">
             <h1 className="text-2xl mt-2 sm:text-5xl inline-block sm:flex  ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
               00{" "}
               <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row   mt-6 sm:mr-10 text-gray-700 dark:text-gray-300">
@@ -34,7 +34,7 @@ const TopContent = () => {
               </span>
             </h1>
           </div>
-          <div className="rounded-3xl flex-1 sm:h-20 shadow-lg items-center dark:bg-black   ">
+          <div className="rounded-3xl bg-white flex-1 sm:h-20 shadow-lg items-center dark:bg-black   ">
             <h1 className="text-2xl mt-2 sm:text-5xl inline-block sm:flex ml-4 sm:mt-6 text-center font-normal text-black dark:text-gray-300">
               00{" "}
               <span className="text-xs text-center mb-2 sm:text-sm sm:flex-row  items-center flex-1 mt-6 sm:mr-10 text-gray-700 dark:text-gray-300">
@@ -46,7 +46,7 @@ const TopContent = () => {
 
         {/* Content Price */}
         <div className="flex mt-4 sm:mt-4 justify-between w-full space-x-2">
-          <div className="shadow-lg h-16  flex-1 sm:mr-2 rounded-3xl dark:bg-black   relative flex-row sm:h-20 ">
+          <div className="shadow-lg h-16  flex-1 sm:mr-2 rounded-3xl bg-white dark:bg-black   relative flex-row sm:h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 dark:text-gray-300 absolute top-1 left-4">
               Current Price
             </p>
@@ -54,7 +54,7 @@ const TopContent = () => {
               LDX = 0.1 BUSD
             </h2>
           </div>
-          <div className="shadow-lg flex-1  rounded-3xl dark:bg-black  relative flex-row md:h-20 ">
+          <div className="shadow-lg flex-1  rounded-3xl bg-white dark:bg-black  relative flex-row md:h-20 ">
             <p className="text-xs md:text-sm font-normal text-gray-700 dark:text-gray-300 absolute top-1 left-4">
               Availble LDX
             </p>
@@ -64,7 +64,7 @@ const TopContent = () => {
           </div>
         </div>
         <div className="flex mt-4 sm:mt-4 justify-between space-x-2">
-          <div className="shadow-lg flex-1   rounded-3xl dark:bg-black   relative flex-row h-20 ">
+          <div className="shadow-lg flex-1   rounded-3xl bg-white dark:bg-black   relative flex-row h-20 ">
             <p className="text-xs md:text-sm font-normal  text-gray-700 dark:text-gray-300 absolute top-1 left-4">
               LDX Token Sold
             </p>
@@ -72,7 +72,7 @@ const TopContent = () => {
               00,000,000,000 LDX
             </h2>
           </div>
-          <div className="shadow-lg flex-1 rounded-3xl dark:bg-black   relative flex-row md:h-20 ">
+          <div className="shadow-lg flex-1 rounded-3xl bg-white dark:bg-black   relative flex-row md:h-20 ">
             <p className="text-xs md:text-sm font-normal text-gray-700 dark:text-gray-300 absolute top-1 left-4">
               LDX Token Sold ($)
             </p>
@@ -82,7 +82,7 @@ const TopContent = () => {
           </div>
         </div>
         {/* ICO Progress */}
-        <div className="w-full  mt-2 h-32 p-4  shadow-lg rounded-3xl dark:bg-black sm:mt-5  ">
+        <div className="w-full  mt-2 h-32 p-4  shadow-lg rounded-3xl bg-white dark:bg-black sm:mt-5  ">
           <p className=" text-xs md:text-sm font-normal text-center dark:text-gray-300 ">
             ICO Progress
           </p>
@@ -111,7 +111,7 @@ const TopContent = () => {
       </div>
 
       {/* right Content */}
-      <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-0  dark:bg-black shadow-xl">
+      <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-0 bg-white  dark:bg-black shadow-xl">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
           <div className="flex flex-row space-x-2 ">
             <button className="bg-white dark:bg-gray-800 shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus:outline-none">

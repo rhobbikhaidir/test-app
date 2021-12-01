@@ -30,7 +30,7 @@ function App() {
     }
   });
   return (
-    <div className="dark:bg-gray-700 h-full">
+    <div className="dark:bg-gray-700 h-full bg-gray-100">
       <div className="flex items-center ">
         <div className="flex flex-row items-end shadow-lg rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
           <p className="text-lg text-gray-600 flex-row">Switcher</p>
@@ -72,7 +72,7 @@ function App() {
           </p>
           {/* content realtime */}
 
-          <div className=" shadow-xl px-4 py-4 rounded-2xl dark:bg-black ">
+          <div className=" shadow-xl px-4 py-4 rounded-2xl bg-white dark:bg-black ">
             <p className="text-sm text-black dark:text-white">
               Total Claimed :
             </p>
@@ -110,7 +110,7 @@ function App() {
           </div>
 
           {/* Content Price */}
-          <div className=" shadow-2xl px-4 py-4 rounded-2xl space-y-4 dark:bg-black">
+          <div className=" shadow-2xl px-4 py-4 rounded-2xl space-y-4 bg-white dark:bg-black">
             <p className="text-sm text-black dark:text-white">Referral :</p>
             <div className="bg-gray-300 dark:bg-gray-800 px-4 py-4 flex flex-col rounded-xl space-y-6">
               <div className="text-center dark:bg">
