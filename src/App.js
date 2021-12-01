@@ -77,17 +77,22 @@ function App() {
               Total Claimed :
             </p>
             <div className="flex-row mt-2 flex items-center">
-              <img src={coinLitedex} alt="" className="w-7 h-7 rounded-full" />
-              <p className="text-xl dark:text-white sm:text-2xl font-bold mx-2">
-                {" "}
-                150 LDX +
-              </p>
-              <img src={BNB} alt="" className="w-7 h-7 rounded-full" />
-              <p className="text-xl dark:text-white sm:text-2xl font-bold ml-2">
-                {" "}
-                0.5 USDT{" "}
-              </p>
-              <p className="text-sm font-sm ml-2 dark:text-white">
+              <div className="flex-row flex">
+                <img
+                  src={coinLitedex}
+                  alt=""
+                  className="w-7 h-7 rounded-full"
+                />
+                <p className="text-base dark:text-white sm:text-2xl font-bold mx-2">
+                  {" "}
+                  150 LDX +
+                </p>
+                <img src={BNB} alt="" className="w-7 h-7 rounded-full" />
+                <p className="text-base dark:text-white sm:text-2xl font-bold ml-2">
+                  0.5 USDT
+                </p>
+              </div>
+              <p className="text-sm font-sm ml-2  sm:flex-row dark:text-white">
                 {" "}
                 = 100 USDT
               </p>
@@ -97,7 +102,7 @@ function App() {
             </p>
             <div className="flex-row mt-2 flex items-center">
               <img src={coinLitedex} alt="" className="w-7 h-7 rounded-full" />
-              <p className=" text-xl dark:text-white sm:text-2xl font-bold mx-2">
+              <p className=" text-base dark:text-white sm:text-2xl font-bold mx-2">
                 {" "}
                 1500 LDX{" "}
               </p>
