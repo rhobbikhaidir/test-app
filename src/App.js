@@ -119,7 +119,7 @@ function App() {
                 </p>
                 <div className="bg-white rounded-2xl flex flex-row py-2 dark:bg-gray-500">
                   <button className="w-full relative text-sm focus:outline-none dark:text-white">
-                    {"0xD316"}
+                    {"0xD315"}
                     <img
                       src={copyIcon}
                       alt=""
