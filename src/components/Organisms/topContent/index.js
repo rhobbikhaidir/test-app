@@ -114,7 +114,7 @@ const TopContent = () => {
       <div className="p-4 rounded-xl h-full flex-2 sm:flex-row flex-col text-center content-center sm:mt-0  dark:bg-black shadow-xl">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:space-x-4 sm:items-end space-y-4">
           <div className="flex flex-row space-x-2 ">
-            <button className="bg-white dark:bg-main-comp-dark dark:bg-black shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus:outline-none">
+            <button className="bg-white dark:bg-gray-800 shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-34 focus:outline-none">
               <img className="w-8 h-8" src={USDT} alt="icon-usdt" />
               <span className="text-base font-semibold text-main-text-dark dark:text-white">
                 USDT
@@ -160,7 +160,7 @@ const TopContent = () => {
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end space-y-4">
           <div className="flex flex-row space-x-2 ">
-            <div className="bg-white dark:bg-main-comp-dark dark:bg-black  shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-32">
+            <div className="bg-white dark:bg-gray-800  shadow-xl p-3 flex items-center rounded-xl justify-start space-x-2 w-32">
               <div className="w-8 h-8">
                 <img className="w-8 h-8" src={Litedex} alt="icon-usdt" />
               </div>
