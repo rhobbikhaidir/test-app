@@ -1,6 +1,5 @@
 import React from "react";
 import charts from "../../../assets/charts.svg";
-import number1 from "../../../assets/1.png";
 
 function LeaderBoardReff() {
   return (
