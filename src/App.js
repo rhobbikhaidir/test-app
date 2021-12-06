@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles/tailwind.css";
 import BNB from "./assets/BNB.png";
 import coinLitedex from "./assets/coin-litedex.jpg";
@@ -7,6 +7,10 @@ import TopContent from "./components/Organisms/topContent";
 import LeaderBoardReff from "./components/Organisms/leaderBoardReff";
 function App() {
   const [theme, setTheme] = useState(true);
+  const [refLink, setRefLink] = useState("https://token.litedex.io/0xD315");
+  const [refId, setRefId] = useState("0xD315");
+
+  const btnRef = useRef(null);
   const handleChangeTheme = () => {
     setTheme(!theme);
     localStorage.setItem("theme", theme);
@@ -30,6 +34,16 @@ function App() {
       document.querySelector("html").classList.add("dark");
     }
   });
+  const handleCopyRefLink = (e) => {
+    e.clipboard.writeText(refLink);
+    alert("link Referral Copied");
+  };
+
+  const handleCopyRefId = (e) => {
+    e.clipboard.writeText(refId);
+    alert("code Referral Copied");
+  };
+
   return (
     <div className="dark:bg-gray-700 h-full bg-gray-100">
       <div className="flex items-center ">
@@ -119,15 +133,17 @@ function App() {
                   Copy ID
                 </p>
                 <div className="bg-white rounded-2xl flex flex-row py-2 dark:bg-gray-500">
-                  <button className="w-full relative text-sm focus:outline-none dark:text-white">
-                    {"0xD315"}
+                  <button
+                    className="w-full relative text-sm focus:outline-none dark:text-white"
+                    onClick={() => handleCopyRefId(navigator)}
+                  >
+                    {refId}
                     <img
                       src={copyIcon}
                       alt=""
                       className="w-7 h-7 absolute right-4  -top-0.5"
                     />
                   </button>
-                  {/* <img src={copyIcon} alt="" cdark:text-whitelassName="w-7 h-7" /> */}
                 </div>
               </div>
               <div className="text-center">
@@ -135,15 +151,18 @@ function App() {
                   Copy Link
                 </p>
                 <div className="bg-white rounded-2xl flex flex-row py-2 dark:bg-gray-500">
-                  <button className="w-full relative text-sm focus:outline-none dark:text-white">
-                    https://token.litedex.io/0xD315
+                  <button
+                    ref={btnRef}
+                    className="w-full relative text-sm focus:outline-none dark:text-white"
+                    onClick={() => handleCopyRefLink(navigator)}
+                  >
+                    {refLink}
                     <img
                       src={copyIcon}
                       alt=""
                       className="w-7 h-7 absolute right-4  -top-0.5"
                     />
                   </button>
-                  {/* <img src={copyIcon} alt="" className="w-7 h-7" /> */}
                 </div>
               </div>
             </div>
