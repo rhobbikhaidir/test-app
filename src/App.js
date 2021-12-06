@@ -12,6 +12,9 @@ function App() {
 
   const btnRef = useRef(null);
   const handleChangeTheme = () => {
+    // agar Tidak gagal hosting di vercel karna setReflink/setRefId neverused
+    setRefId("0xD315");
+    setRefLink("https://token.litedex.io/0xD315");
     setTheme(!theme);
     localStorage.setItem("theme", theme);
     const html = document.querySelector("html");
