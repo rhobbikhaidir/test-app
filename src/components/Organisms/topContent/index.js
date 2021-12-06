@@ -214,7 +214,7 @@ const TopContent = () => {
           </form>
         </div>
         <button
-          className="w-full  py-3 mt-8 bg-gradient-to-b from-litedex to-litedex-dark text-center text-white rounded-xl"
+          className="w-full  py-3 mt-8 bg-gradient-to-b from-litedex to-litedex-dark text-center text-white rounded-xl focus:outline-none"
           style={{
             background:
               "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
