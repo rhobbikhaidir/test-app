@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import "./styles/tailwind.css";
 import BNB from "./assets/BNB.png";
 import coinLitedex from "./assets/coin-litedex.jpg";
-import TopContent from "./components/Organisms/topContent";
-import "./styles/tailwind.css";
 import copyIcon from "./assets/copy-btn.svg";
+import TopContent from "./components/Organisms/topContent";
+import LeaderBoardReff from "./components/Organisms/leaderBoardReff";
 function App() {
   const [theme, setTheme] = useState(true);
   const handleChangeTheme = () => {
@@ -185,7 +186,7 @@ function App() {
                 Claim your referral
               </p>
               <button
-                className="rounded-2xl text-white px-10 py-2"
+                className="rounded-2xl text-white px-10 py-2 focus:outline-none"
                 style={{
                   background:
                     "linear-gradient(to bottom, #1ec01e, #1dba1d, #1cb31c, #1bad1b, #1aa71a)",
@@ -197,6 +198,7 @@ function App() {
           </div>
         </div>
       </div>
+      <LeaderBoardReff />
     </div>
   );
 }
