@@ -14,9 +14,9 @@ function LeaderBoardReff() {
         {/* content realtime */}
 
         <div className=" shadow-xl flex flex-row justify-between px-4 py-6 rounded-2xl bg-white dark:bg-black  mb-8 ">
-          <p className="text-sm text-black">Ranking</p>
-          <p className="text-sm text-black">Refferal ID</p>
-          <p className="text-sm text-black">Total Invite</p>
+          <p className="text-sm text-black dark:text-white">Ranking</p>
+          <p className="text-sm text-black dark:text-white">Refferal ID</p>
+          <p className="text-sm text-black dark:text-white">Total Invite</p>
         </div>
         <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
           <div className="bg-gray-200 rounded-full w-12 h-12">
@@ -24,8 +24,8 @@ function LeaderBoardReff() {
               1
             </p>
           </div>
-          <p className="text-sm text-black">ID-9080</p>
-          <p className="text-sm text-black">2000</p>
+          <p className="text-sm text-black dark:text-white">ID-9080</p>
+          <p className="text-sm text-black dark:text-white">2000</p>
         </div>
         <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
           <div className="bg-gray-200 rounded-full w-12 h-12">
@@ -33,8 +33,8 @@ function LeaderBoardReff() {
               2
             </p>
           </div>
-          <p className="text-sm text-black">ID-9080</p>
-          <p className="text-sm text-black">1500</p>
+          <p className="text-sm text-black dark:text-white">ID-9080</p>
+          <p className="text-sm text-black dark:text-white">1500</p>
         </div>
         <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
           <div className="bg-gray-200 rounded-full w-12 h-12">
@@ -42,8 +42,8 @@ function LeaderBoardReff() {
               3
             </p>
           </div>
-          <p className="text-sm text-black">ID-9080</p>
-          <p className="text-sm text-black">500</p>
+          <p className="text-sm text-black dark:text-white">ID-9080</p>
+          <p className="text-sm text-black dark:text-white">500</p>
         </div>
 
         {/* Content Price */}
