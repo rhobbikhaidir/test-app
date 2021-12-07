@@ -1,11 +1,24 @@
 import React from "react";
-import charts from "../../../assets/charts.svg";
+import charts from "../../../assets/charts.png";
 
 function LeaderBoardReff() {
   return (
     <div className="max-w-sm mr-0  sm:flex-row sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-4">
-      <div className="mb-12 flex-1  flex flex-wrap content-center  sm:ml-3 sm:mt-16">
-        <img src={charts} alt="charts board" />
+      <div
+        className=" mb-12 flex-1 sm:ml-3 sm:mt-16 relative"
+        // style={{ position: "relative" }}
+      >
+        <img src={charts} alt="charts" />
+        <p
+          className="text-sm text-black absolute left-14 "
+          style={{ top: "4.8rem" }}
+        >
+          ID-9080
+        </p>
+        <p className="text-sm text-black absolute top-10 left-52 ml-7 ">
+          ID-9080
+        </p>
+        <p className="text-sm text-black absolute top-28 right-44">ID-9080</p>
       </div>
       <div className="mb-8 flex-1 sm:ml-3  flex flex-col space-y-6  ">
         <div className=" shadow-xl flex flex-row justify-between px-4 py-6 rounded-2xl bg-white dark:bg-black  mb-8 ">
