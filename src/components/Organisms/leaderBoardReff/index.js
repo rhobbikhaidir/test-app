@@ -10,15 +10,17 @@ function LeaderBoardReff() {
       >
         <img src={charts} alt="charts" />
         <p
-          className="text-sm text-black absolute left-14 "
-          style={{ top: "4.8rem" }}
+          className="text-xs font-bold dark:text-white sm:text-sm text-black absolute top-12 mt-1 left-10 sm:left-14 sm:top-16 sm:mt-3 "
+          // style={{ top: "4.8rem" }}
         >
           ID-9080
         </p>
-        <p className="text-sm text-black absolute top-10 left-52 ml-7 ">
+        <p className="text-xs font-bold dark:text-white sm:text-sm left-40 top-6 text-black absolute sm:top-9 sm:left-52 sm:ml-7 ">
           ID-9080
         </p>
-        <p className="text-sm text-black absolute top-28 right-44">ID-9080</p>
+        <p className="text-xs font-bold dark:text-white sm:text-sm top-16 mt-3 right-10 text-black absolute sm:top-28 sm:right-44 sm:mr-1 sm:mt-0">
+          ID-9080
+        </p>
       </div>
       <div className="mb-8 flex-1 sm:ml-3  flex flex-col space-y-6  ">
         <div className=" shadow-xl flex flex-row justify-between px-4 py-6 rounded-2xl bg-white dark:bg-black  mb-8 ">
