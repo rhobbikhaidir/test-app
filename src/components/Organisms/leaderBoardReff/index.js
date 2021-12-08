@@ -22,41 +22,57 @@ function LeaderBoardReff() {
           ID-9080
         </p>
       </div>
-      <div className="mb-8 flex-1 sm:ml-3  flex flex-col space-y-6   ">
+      <div className="mb-8 flex-1 sm:ml-3  flex flex-col space-y-6 ">
         <div className=" shadow-xl flex flex-row justify-between px-4 py-6 rounded-2xl bg-white dark:bg-black  mb-8 ">
           <p className="text-sm text-black dark:text-white">Ranking</p>
           <p className="text-sm text-black dark:text-white">Refferal ID</p>
           <p className="text-sm text-black dark:text-white">Total Invite</p>
         </div>
-        <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
-          {/* <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
-            <p className="text-2xl font-bold text-green-400 text-center mt-2">
-              1
-            </p>
-          </div> */}
-          <img src={Gold} alt="Medal Gold" />
-          <p className="text-sm text-black dark:text-white">ID-9080</p>
-          <p className="text-sm text-black dark:text-white">2000</p>
-        </div>
-        <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
-          {/* <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
-            <p className="text-2xl font-bold text-green-400 text-center mt-2">
-              2
-            </p>
-          </div> */}
-          <img src={Silver} alt="Medal Silver" />
-          <p className="text-sm text-black dark:text-white">ID-9080</p>
-          <p className="text-sm text-black dark:text-white">1500</p>
-        </div>
-        <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
-          {/* <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
+        <div className="overflow-y-scroll h-64 px-2 py-2 flex flex-col space-y-6 ">
+          <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
+            <div className="w-12 h-12">
+              <img src={Gold} alt="Medal Gold" />
+            </div>
+            <p className="text-sm text-black dark:text-white">ID-9080</p>
+            <p className="text-sm text-black dark:text-white">2000</p>
+          </div>
+          <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black  ">
+            <div className="w-12 h-12">
+              <img src={Silver} alt="Medal Silver" />
+            </div>
+            <p className="text-sm text-black dark:text-white">ID-9080</p>
+            <p className="text-sm text-black dark:text-white">1500</p>
+          </div>
+          <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
+            {/* <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
             <p className="text-2xl font-bold text-green-400 text-center mt-2">
               3
             </p>
           </div> */}
-          <img src={Bronze} alt="Medal Bronze" />
-          <p className="text-sm text-black dark:text-white">ID-9080</p>
-          <p className="text-sm text-black dark:text-white">500</p>
+            <div className="w-12 h-12">
+              <img src={Bronze} alt="Medal Bronze" />
+            </div>
+            <p className="text-sm text-black dark:text-white">ID-9080</p>
+            <p className="text-sm text-black dark:text-white">500</p>
+          </div>
+          <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black ">
+            <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
+              <p className="text-2xl font-bold text-green-400 text-center mt-2">
+                4
+              </p>
+            </div>
+            <p className="text-sm text-black dark:text-white">ID-9080</p>
+            <p className="text-sm text-black dark:text-white">500</p>
+          </div>
+          <div className=" shadow-xl flex items-center flex-row justify-between px-4 py-2 rounded-2xl bg-white dark:bg-black  ">
+            <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
+              <p className="text-2xl font-bold text-green-400 text-center mt-2">
+                5
+              </p>
+            </div>
+            <p className="text-sm text-black dark:text-white">ID-9080</p>
+            <p className="text-sm text-black dark:text-white">500</p>
+          </div>
         </div>
       </div>
     </div>
