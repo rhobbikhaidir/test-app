@@ -1,8 +1,8 @@
 import React from "react";
 import charts from "../../../assets/charts.png";
-import Gold from "../../../assets/Gold.svg";
-import Silver from "../../../assets/Silver.svg";
-import Bronze from "../../../assets/Bronze.svg";
+import Gold from "../../../assets/Gold.png";
+import Silver from "../../../assets/Silver.png";
+import Bronze from "../../../assets/Bronze.png";
 
 function LeaderBoardReff() {
   return (
@@ -11,21 +11,14 @@ function LeaderBoardReff() {
         className=" flex-1  sm:ml-3  mb-12 sm:mb-0 relative"
         // style={{ position: "relative" }}
       >
-        <img
-          src={charts}
-          alt="charts"
-          // className="flex flex-wrap content-center"
-        />
-        <p
-          className="text-xs font-bold dark:text-white sm:text-sm text-black absolute top-12 mt-1 left-10 sm:left-14 sm:top-24 sm:mt-6 "
-          // style={{ top: "4.8rem" }}
-        >
+        <img src={charts} alt="charts" />
+        <p className="text-xs font-bold dark:text-white sm:text-sm text-black absolute top-20 mt-0.5 left-10 sm:left-14 sm:top-24 sm:mt-6 ">
           ID-90800
         </p>
-        <p className="text-xs font-bold dark:text-white sm:text-sm left-40 top-6 text-black absolute sm:top-20 sm:left-52 sm:ml-7 ">
+        <p className="text-xs font-bold dark:text-white sm:text-sm left-40 top-14 text-black absolute sm:top-20 sm:left-52 sm:ml-7 ">
           ID-9080
         </p>
-        <p className="text-xs font-bold dark:text-white sm:text-sm top-16 mt-3 right-10 text-black absolute sm:top-36 sm:right-28 sm:mr-2 sm:mt-3">
+        <p className="text-xs font-bold dark:text-white sm:text-sm right-10  top-24 mt-2 text-black absolute sm:top-36 sm:mt-3 sm:right-40 sm:mr-4 ">
           ID-9080
         </p>
       </div>
