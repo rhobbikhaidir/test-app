@@ -18,7 +18,7 @@ function LeaderBoardReff() {
         <p className="text-xs font-bold dark:text-white sm:text-sm left-40 top-14 text-black absolute sm:top-20 sm:left-52 sm:ml-7 ">
           ID-9080
         </p>
-        <p className="text-xs font-bold dark:text-white sm:text-sm right-10  top-24 mt-2 text-black absolute sm:top-36 sm:mt-3 sm:right-40 sm:mr-4 ">
+        <p className="text-xs font-bold dark:text-white sm:text-sm right-10  top-24 mt-2.5 text-black absolute sm:top-36 sm:mt-3 sm:right-40 sm:mr-4 ">
           ID-9080
         </p>
       </div>
