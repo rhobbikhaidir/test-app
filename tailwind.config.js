@@ -448,7 +448,10 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
       ...negative(theme("spacing")),
+      "1/6": "18%", // baru di tambah
+      "1/5": "24%", // baru di tambah
       "1/2": "50%",
+      "3/3": "36%", // baru di tambah
       "1/3": "33.333333%",
       "2/3": "66.666667%",
       "1/4": "25%",
@@ -838,6 +841,7 @@ module.exports = {
     "disabled",
   ],
   variants: {
+    scrollbar: ["rounded"],
     accessibility: ["responsive", "focus-within", "focus"],
     alignContent: ["responsive"],
     alignItems: ["responsive"],
@@ -1030,5 +1034,5 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
