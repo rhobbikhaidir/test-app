@@ -22,7 +22,7 @@ function Reff(props) {
     console.log("router url", location.pathname);
     console.log(props.id);
     console.log("window url", window.location.pathname);
-  }, []);
+  }, [location.pathname, reffVal, props.id]);
 
   const handleChangeReffId = (e) => {
     setReffVal(e.target.value);

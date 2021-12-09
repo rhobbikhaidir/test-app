@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/home";
 import Reff from "./components/Reff";
@@ -26,7 +26,7 @@ function App() {
   ];
   const myArray = Math.floor(Math.random() * referral.length);
   const random = referral[myArray];
-  console.log(random);
+  // console.log(random);
   const [refId, setRefId] = useState(random);
   return (
     <Fragment>

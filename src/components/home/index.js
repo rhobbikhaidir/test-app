@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import BNB from "../../assets/BNB.png";
 import coinLitedex from "../../assets/coin-litedex.jpg";
 import copyIcon from "../../assets/copy-btn.svg";
@@ -25,11 +24,11 @@ function Home(props) {
       html.classList.add("dark");
     }
   };
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleRefId = (e) => {
-    props.setRefId(e.target.value);
-  };
+  // const handleRefId = (e) => {
+  //   props.setRefId(e.target.value);
+  // };
 
   useEffect(() => {
     if (theme) {

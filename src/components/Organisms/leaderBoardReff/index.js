@@ -37,7 +37,7 @@ function LeaderBoardReff() {
         </div>
         <div
           className={`overflow-y-scroll  ${
-            scroll ? "border-t border-gray-400 border-opacity-25" : ""
+            scroll ? "border-t border-gray-400 border-opacity-10" : ""
           } h-64 px-2 py-2 flex flex-col space-y-6 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrol overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full`}
           onScroll={handleScroll}
         >
