@@ -36,7 +36,7 @@ function App() {
           path="/"
           element={<Home refId={refId} setRefId={setRefId} />}
         />
-        <Route exact path="/reff/:ididid" element={<Reff id={refId} />} />
+        <Route exact path="/reff/:id" element={<Reff id={refId} />} />
       </Routes>
     </Fragment>
   );

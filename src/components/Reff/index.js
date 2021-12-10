@@ -11,18 +11,22 @@ function Reff(props) {
 
   const location = useLocation();
   useEffect(() => {
+    const rootUrl = new URL(window.location.href);
+    const urlId = rootUrl.pathname;
+    const getUrlId = urlId.split("/").pop();
+    console.log(getUrlId, "id url");
     if (window.location.pathname === location.pathname) {
-      setReffVal(props.id);
+      setReffVal(getUrlId);
       console.log("succes");
     } else {
       setReffVal("");
       console.log("gagal");
     }
-    console.log("first id", reffVal);
-    console.log("router url", location.pathname);
-    console.log(props.id);
-    console.log("window url", window.location.pathname);
-  }, [location.pathname, reffVal, props.id]);
+    // console.log("first id", reffVal);
+    // console.log("router url", location.pathname);
+    // console.log(props.id);
+    // console.log("window url", window.location.pathname);
+  }, [location.pathname]);
 
   const handleChangeReffId = (e) => {
     setReffVal(e.target.value);

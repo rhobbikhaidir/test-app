@@ -8,6 +8,7 @@ import TopContent from "../Organisms/topContent";
 
 function Home(props) {
   const [theme, setTheme] = useState(true);
+  const url = window.location.href;
 
   const btnRef = useRef(null);
   const handleChangeTheme = () => {
@@ -45,11 +46,10 @@ function Home(props) {
     // } else {
     //   setRefId("");
     // }
-    console.log(window.location.href);
   }, [theme]);
   const handleCopyRefLink = (e) => {
     // navigate(`/reff/${props.refId}`);
-    e.clipboard.writeText(`https://token.litedex.io/${props.refId}`);
+    e.clipboard.writeText(`${url}reff/${props.refId}`);
     alert("link Referral Copied");
   };
 
@@ -170,10 +170,10 @@ function Home(props) {
                     className="w-full relative text-sm focus:outline-none dark:text-white"
                     onClick={() => handleCopyRefLink(navigator)}
                   >
-                    {`https://token.litedex.io/${props.refId}`}
+                    {`${url}reff/${props.refId}`}
                     <img
                       src={copyIcon}
-                      alt=""
+                      alt="copy icon"
                       className="w-7 h-7 absolute right-4  -top-0.5"
                     />
                   </button>
