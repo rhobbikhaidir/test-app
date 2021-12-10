@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import swal from "sweetalert";
 import BNB from "../../assets/BNB.png";
 import coinLitedex from "../../assets/coin-litedex.jpg";
 import copyIcon from "../../assets/copy-btn.svg";
@@ -50,12 +51,12 @@ function Home(props) {
   const handleCopyRefLink = (e) => {
     // navigate(`/reff/${props.refId}`);
     e.clipboard.writeText(`${url}reff/${props.refId}`);
-    alert("link Referral Copied");
+    swal("referral Link Copied", `${url}reff/${props.refId}`, "success");
   };
 
   const handleCopyRefId = (e) => {
     e.clipboard.writeText(props.refId);
-    alert("code Referral Copied");
+    swal("referral Copied", `${props.refId}`, "success");
   };
 
   return (
