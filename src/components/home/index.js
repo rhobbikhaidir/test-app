@@ -8,6 +8,7 @@ import LeaderBoardReff from "../Organisms/leaderBoardReff";
 import TopContent from "../Organisms/topContent";
 
 function Home(props) {
+  const [referral, setReferral] = useState("");
   const [theme, setTheme] = useState(true);
   const url = window.location.href;
 
@@ -26,11 +27,6 @@ function Home(props) {
       html.classList.add("dark");
     }
   };
-  // const navigate = useNavigate();
-
-  // const handleRefId = (e) => {
-  //   props.setRefId(e.target.value);
-  // };
 
   useEffect(() => {
     if (theme) {
@@ -40,25 +36,30 @@ function Home(props) {
       document.querySelector("html").classList.remove("light");
       document.querySelector("html").classList.add("dark");
     }
-    // if (window.location.href) {
-    //   // fetch("").then((data) => {
-    //   setRefId("0xD315");
-    //   // });
-    // } else {
-    //   setRefId("");
-    // }
   }, [theme]);
+
+  // copyLinkReferral
   const handleCopyRefLink = (e) => {
-    // navigate(`/reff/${props.refId}`);
     e.clipboard.writeText(`${url}reff/${props.refId}`);
     swal("referral Link Copied", `${url}reff/${props.refId}`, "success");
   };
-
+  // copy Referral
   const handleCopyRefId = (e) => {
     e.clipboard.writeText(props.refId);
     swal("referral Copied", `${props.refId}`, "success");
   };
 
+  // pasteButton
+  const handlerPaste = (e, navigator) => {
+    e.preventDefault();
+    navigator.clipboard.readText().then((text) => setReferral(text));
+    // console.log(paste);
+  };
+
+  // onChange Refferal input
+  const handleChangeReferral = (e) => {
+    setReferral(e.target.value);
+  };
   return (
     <div className="dark:bg-gray-700 h-full bg-gray-100">
       <div className="flex items-center ">
@@ -74,8 +75,11 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <TopContent />
-
+      <TopContent
+        onPaste={(e) => handlerPaste(e, navigator)}
+        onChange={handleChangeReferral}
+        value={referral}
+      />
       {/* content Bot */}
       <div className="max-w-sm mr-0 flex-col-reverse sm:flex-row-reverse  sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-4">
         <div className="mb-8 flex-1  flex flex-wrap content-center  sm:ml-3 sm:mt-16">

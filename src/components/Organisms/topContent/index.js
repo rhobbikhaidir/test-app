@@ -4,7 +4,7 @@ import Litedex from "../../../assets/litedex.png";
 import arrowDown from "../../../assets/arrowdown.svg";
 import arrowDown2 from "../../../assets/arrowSvg.svg";
 
-const TopContent = ({ onChange, value }) => {
+const TopContent = ({ onChange, value, onPaste }) => {
   return (
     <div className="max-w-sm mr-0 block sm:flex sm:justify-between sm:max-w-full sm:py-16 sm:px-8 py-4 px-4 sm:space-x-4">
       <div className="mb-8  flex-1 flex-col sm:ml-3 sm:flex-row  ">
@@ -209,7 +209,10 @@ const TopContent = ({ onChange, value }) => {
                 onChange={onChange}
                 value={value}
               />
-              <button className="text-litedex font-bold focus:outline-none text-green-400">
+              <button
+                className="text-litedex font-bold focus:outline-none text-green-400"
+                onClick={onPaste}
+              >
                 Paste
               </button>
             </div>

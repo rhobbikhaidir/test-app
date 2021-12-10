@@ -62,11 +62,6 @@ function LeaderBoardReff() {
             <p className="text-sm text-black dark:text-white">1500</p>
           </div>
           <div className=" shadow-xl flex items-center flex-row justify-between px-6 py-2 rounded-2xl bg-white dark:bg-black ">
-            {/* <div className="bg-gray-200 dark:bg-gray-400 rounded-full w-12 h-12">
-            <p className="text-2xl font-bold text-green-400 text-center mt-2">
-              3
-            </p>
-          </div> */}
             <div className="w-12 h-12 items-center">
               <img
                 className="w-10 mt-0.5 h-11"
