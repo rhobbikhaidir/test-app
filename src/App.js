@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Switch, Navigate } from "react-router-dom";
 import Home from "./components/home";
 import Reff from "./components/Reff";
 
@@ -37,6 +37,7 @@ function App() {
           element={<Home refId={refId} setRefId={setRefId} />}
         />
         <Route exact path="/reff/:id" element={<Reff id={refId} />} />
+        <Route path="/reff" element={<Navigate to="/" />} />
       </Routes>
     </Fragment>
   );
